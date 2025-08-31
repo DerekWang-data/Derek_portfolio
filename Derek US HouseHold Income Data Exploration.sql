@@ -7,13 +7,13 @@ FROM household_income.ushouseholdincome;
 SELECT *
 FROM household_income.ushouseholdincome_statistics;
 
-#When we are exploring the data we are trying to find trends, patterns, insights into the data.
-#I'm noticing there's not date fields, so no time series data. So probably won't be looking for trends over time.
+# Data Exploration Notes
 
-#We can look at some information at the state level through, like size of each state, average city size, etc. 
-#We can also join to the statistics table and look at mean and median incomes
-
-#Let's start with some simple stuff and work our way to the joining the tables.
+- Goal: identify trends, patterns, and insights within the dataset.  
+- Observation: there are no date fields available, so time series analysis will not be applicable.  
+- Alternative focus: explore information at the state level (e.g., state size, average city size).  
+- Next step: join with the statistics table to analyze additional variables such as mean and median incomes.  
+- Approach: begin with simple descriptive exploration, then progress to table joins for deeper analysis.
 
 #Let's select the columns we want to work with
 SELECT State_Name, ALand, AWater
